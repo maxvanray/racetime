@@ -19,7 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/race', 'RaceController@index')->name('race');
+Route::get('race', 'RaceController@index')->name('race');
+Route::post('race', 'RaceController@store')->name('race');
 
 
 
